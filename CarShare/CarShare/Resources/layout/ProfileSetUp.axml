@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Set Up Profile"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:id="@+id/textRegister"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/firstName"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/lastName"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/email"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/phoneNo"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile No."
+        android:inputType="phone" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="@string/gender_prompt" />
+    <Spinner
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:prompt="@string/gender_prompt"
+        android:id="@+id/gender" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="@string/county_prompt" />
+    <Spinner
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:prompt="@string/county_prompt"
+        android:id="@+id/county" />
+    <Button
+        android:text="Save Details"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/trySaveButton"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true" />
+</LinearLayout>

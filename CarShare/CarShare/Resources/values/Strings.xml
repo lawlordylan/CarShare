@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">CarShare</string>
+  <string name="gender_prompt">Please select your gender</string>
+  <string-array name="gender">
+    <item>Male</item>
+    <item>Female</item>
+    <item>Prefer not to Disclose</item>
+  </string-array>
+  <string-array name="passengersNumber">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+  </string-array>
+  <string name="county_prompt">Please select your county</string>
+  <string-array name="county">
+    <item>Antrim</item>
+    <item>Armagh</item>
+    <item>Carlow</item>
+    <item>Cavan</item>
+    <item>Clare</item>
+    <item>Cork</item>
+    <item>Derry</item>
+    <item>Donegal</item>
+    <item>Down</item>
+    <item>Dublin</item>
+    <item>Fermanagh</item>
+    <item>Galway</item>
+    <item>Kerry</item>
+    <item>Kildare</item>
+    <item>Kilkenny</item>
+    <item>Laois</item>
+    <item>Leitrim</item>
+    <item>Limerick</item>
+    <item>Longford</item>
+    <item>Louth</item>
+    <item>Mayo</item>
+    <item>Meath</item>
+    <item>Monaghan</item>
+    <item>Offaly</item>
+    <item>Roscommon</item>
+    <item>Sligo</item>
+    <item>Tipperary</item>
+    <item>Tyrone</item>
+    <item>Waterford</item>
+    <item>Westmeath</item>
+    <item>Wexford</item>
+    <item>Wicklow</item>
+  </string-array>
+</resources>

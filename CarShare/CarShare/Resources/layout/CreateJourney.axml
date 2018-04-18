@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:id="@+id/mapFrame" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:weightSum="100">
+        <Button
+            android:text="Find Me"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:id="@+id/buttonFindMe"
+            android:backgroundTint="#ff0000ff" />
+        <Button
+            android:text="Set From"
+            android:layout_weight="25"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:id="@+id/buttonSetFrom"
+            android:backgroundTint="#ff8b0000" />
+        <Button
+            android:text="set to"
+            android:layout_weight="25"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:id="@+id/buttonSetTo"
+            android:backgroundTint="#ff008000" />
+        <Button
+            android:text="Save"
+            android:layout_weight="25"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:id="@+id/buttonSave" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="51.0dp"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:text="Number of Passengers: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewNumOfPassengers"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerNumOfPassengers"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3">
+                <TextView
+                    android:text="Departure Date: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewDepDate" />
+                <Button
+                    android:text="Select Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selectDateButton" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout7">
+                <TextView
+                    android:text="Departure Time: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewDepTime" />
+                <Button
+                    android:text="Select Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeSelectButton" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="51.0dp"
+                android:id="@+id/linearLayout5">
+                <TextView
+                    android:text="Recurring: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewReccuring"
+                    android:gravity="center_vertical" />
+                <RadioButton
+                    android:text="No"
+                    android:layout_width="60.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioNo"
+                    android:checked="true" />
+                <RadioButton
+                    android:text="Yes"
+                    android:layout_width="63.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioYes" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout8">
+                <Button
+                    android:text="Add Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonAddDates"
+                    android:visibility="invisible" />
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewExtraDates" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

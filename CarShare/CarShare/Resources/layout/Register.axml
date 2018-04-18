@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Register"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:id="@+id/textRegister"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/usernameReg"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="Username" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/passwordInput1"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:password="true"
+        android:hint="Password" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/passwordInput2"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:password="true"
+        android:hint="Confirm Password" />
+    <Button
+        android:text="Register"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/tryRegisterButton"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true" />
+<!-- Progress bar overlay; shown while login is in progress 
+    <include
+        layout="@layout/include_progress_overlay" />-->
+</LinearLayout>

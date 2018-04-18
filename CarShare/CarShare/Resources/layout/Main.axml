@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:id="@+id/textLogin"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/username"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:hint="Username" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/passwordInput"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:password="true"
+        android:hint="Password" />
+    <Button
+        android:text="Login"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/loginButton"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true" />
+    <Button
+        android:text="Register"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/registerButton"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true" />
+    <Button
+        android:text="Debugger"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/testButton"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:background="@android:color/holo_blue_dark"
+        android:clickable="true"
+        android:visibility="invisible" />
+</LinearLayout>

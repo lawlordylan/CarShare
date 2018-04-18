@@ -1,1 +1,2 @@
-# CarShare
+# Java
+Java projects with IntelliJ
