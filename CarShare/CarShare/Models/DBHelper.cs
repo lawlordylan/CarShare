@@ -23,7 +23,7 @@ namespace CarShare.Models
         public static MobileServiceClient MobileService =
         new MobileServiceClient("https://c00197013.azurewebsites.net");
 
-        public const string SendGridAPIKey = "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";
+        public const string SendGridAPIKey = "SECRET"; //API key is private
         public static async void InsertNewUser(Users u)
         {
             CurrentPlatform.Init();
